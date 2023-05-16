@@ -1,4 +1,4 @@
-import {Img, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Img, useCurrentFrame, useVideoConfig} from 'remotion';
 
 const imageWidth = 300;
 const imageHeight = 141;
@@ -17,7 +17,7 @@ export const MyComposition = () => {
 	const y = zigzag(frame / 80) * (height - imageHeight);
 
 	return (
-		<div
+		<AbsoluteFill
 			style={{
 				backgroundColor: 'black',
 			}}
@@ -30,6 +30,6 @@ export const MyComposition = () => {
 				}}
 				src="https://seeklogo.com/images/D/DVD_Video-logo-EEB6CBE3CB-seeklogo.com.png"
 			/>
-		</div>
+		</AbsoluteFill>
 	);
 };
